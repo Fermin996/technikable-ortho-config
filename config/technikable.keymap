@@ -16,6 +16,8 @@
 
 &lt { quick_tap_ms = <200>; };
 
+&mt { tapping-term-ms = <280>; };
+
 / {
     chosen { zmk,matrix_transform = &ortho_transform; };
 
@@ -25,10 +27,10 @@
         base_layer {
             label = "Base";
             bindings = <
-&kp TAB        &kp Q               &kp W               &kp F           &kp P             &kp B             &kp J      &kp L             &kp U               &kp Y    &kp SEMI        &kp HASH
-&kp BACKSPACE  &mt LEFT_COMMAND A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_SHIFT T  &kp G             &kp M      &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &kp I    &kp O           &kp LS(SQT)
-&kp GRAVE      &kp Z               &kp X               &kp C           &kp D             &kp V             &kp K      &kp H             &kp COMMA           &kp DOT  &kp UNDERSCORE  &kp ESC
-                                   &kp LCTRL           &kp LALT        &kp SPACE         &kp ENTER  &mo 1  &kp SPACE  &sl 3             &kp LEFT_COMMAND
+&kp TAB        &kp Q               &kp W               &kp F           &kp P             &kp B              &kp J      &kp L             &kp U               &kp Y    &kp SEMI        &kp HASH
+&kp BACKSPACE  &mt LEFT_COMMAND A  &mt LEFT_CONTROL R  &mt LEFT_ALT S  &mt LEFT_SHIFT T  &kp G              &kp M      &mt LEFT_SHIFT N  &mt LEFT_COMMAND E  &kp I    &kp O           &kp SQT
+&kp GRAVE      &kp Z               &kp X               &kp C           &kp D             &kp V              &kp K      &kp H             &kp COMMA           &kp DOT  &kp UNDERSCORE  &kp ESC
+                                   &kp LCTRL           &kp LALT        &kp SPACE         &kp ENTER  &tog 1  &kp SPACE  &sl 3             &kp LEFT_COMMAND
             >;
         };
 
