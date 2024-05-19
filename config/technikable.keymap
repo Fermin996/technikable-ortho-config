@@ -19,15 +19,6 @@
 / {
     chosen { zmk,matrix_transform = &ortho_transform; };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <NAV_L NUM_L>;
-            then-layer = <SYM_L>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -51,7 +42,7 @@
             >;
         };
 
-        sym_layer {
+        num_layer {
             label = "Num";
             bindings = <
 &trans  &trans  &kp N1     &kp N2  &kp N3  &kp D          &trans     &kp C_PREV  &trans   &trans  &trans  &trans
@@ -61,7 +52,7 @@
             >;
         };
 
-        num_layer {
+        sym_layer {
             label = "Sym";
             bindings = <
 &trans    &kp LS(N3)  &kp LS(N2)  &kp LBRC    &kp RBRC  &kp PIPE              &kp ASTERISK  &trans     &trans        &trans    &trans  &trans
